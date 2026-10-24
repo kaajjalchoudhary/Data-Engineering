@@ -1,0 +1,21 @@
+[project]
+name = "nyc-taxi-spark-pipeline"
+version = "0.1.0"
+description = "Batch ETL pipeline for NYC TLC taxi trips built with PySpark"
+requires-python = ">=3.9"
+dependencies = ["pyspark>=3.5,<4"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tests"]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["taxi_pipeline", "conftest"]
