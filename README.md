@@ -112,3 +112,7 @@ CI runs linting, the test suite and a full pipeline run on sample data for every
 - Orchestrate monthly runs with Airflow
 - Write to Delta Lake / Iceberg for ACID upserts and time travel
 - Run on a cluster (EMR / Dataproc / Databricks) against the full multi-year history
+
+## License
+
+MIT, see [LICENSE](LICENSE).
